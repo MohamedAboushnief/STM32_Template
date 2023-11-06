@@ -1,6 +1,6 @@
 {
 	"name": "STM32",
-	"image": "tufast/stm32-builder:Ubuntu-latest",
+	"image": "tufast/stm32-environment:ubuntu-latest",
 	"privileged": true,
 	"customizations": {
 		"vscode": {
