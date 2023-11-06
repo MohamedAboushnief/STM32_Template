@@ -14,7 +14,11 @@ RUN apt-get update && apt-get install -y \
 	git gnupg2 \
 	stlink-tools \
 	xz-utils curl \
-	uncrustify
+	uncrustify \
+	doxygen \
+	doxygen-doc \
+	doxygen-gui \
+	graphviz
 
 # Get ARM Toolchain
 RUN if [ "$TARGETPLATFORM" = "linux/amd64" ]; then export ARM_ARCH=x86_64; \
