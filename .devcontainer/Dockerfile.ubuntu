@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y \
 	cmake ninja-build \
 	git gnupg2 \
 	stlink-tools \
-	xz-utils curl
+	xz-utils curl \
+	uncrustify
 
 # Get ARM Toolchain
 RUN if [ "$TARGETPLATFORM" = "linux/amd64" ]; then export ARM_ARCH=x86_64; \
