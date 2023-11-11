@@ -13,6 +13,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS	ON)
 set(PROJ_PATH                       ${CMAKE_CURRENT_SOURCE_DIR})
 set(CMAKE_TOOLCHAIN_FILE			gcc-arm-none-eabi)
 
+# set(CMAKE_C_CLANG_TIDY
+#     clang-tidy;
+#     -header-filter=./Src/*;
+#     -checks=-*,bugprone-*,performance-*,modernize-*,misra-*
+# )
 
 
 # Project Name    --- MUST EDIT ---
